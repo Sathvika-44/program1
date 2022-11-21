@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>text to speech convertor</title>
+    </head>
+    <body style="background-color:darkviolet;align-items:center;justify-content:center;display: flex;padding: 250px;">
+        <div class="wap" style="background-color:white;width:50%;padding: 10px;">
+            <header style="text-align: center;">
+                <b>TEXT TO SPEECH</b>
+            </header>
+            <FORM action="'#" style="display:flex;flex-direction:column;">
+                <div class="row" >
+                    <label > Enter Text</label>
+                    <textarea  style="width:100%;height: 100px;"></textarea>
+                </div>
+               <!-- <div class="row">
+                    <label>Select Voice</label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>-->
+                <button style="font-size: medium;background-color: blueviolet; height:40px;" onclick="convert()">Convert To Speech</button>
+            </FORM>
+            
+        </div>
+        <script>
+            const textarea=document.querySelector("textarea"),
+            speech=document.querySelector("button");
+            function texttospeech(text){
+                
+            }
+            function convert(){
+                if(textarea.value!==""){
+                    texttospeech(textarea.value);
+                }
+            }
+        </script>
+    </body>
+</html>
